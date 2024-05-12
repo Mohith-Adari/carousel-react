@@ -33,12 +33,16 @@ class ReviewsCarousel extends Component {
         <div className="sub-container">
           <h1 className="main-heading">Reviews</h1>
           <div className="carousel-container">
-            <button type="button" data-testId="leftArrow" className="btn-style">
+            <button
+              type="button"
+              data-testid="leftArrow"
+              className="btn-style"
+              onClick={this.changeCarouselRight}
+            >
               <img
                 src="https://assets.ccbp.in/frontend/react-js/left-arrow-img.png"
                 alt="left arrow"
                 className="arrow"
-                onClick={this.changeCarouselLeft}
               />
             </button>
 
@@ -50,14 +54,14 @@ class ReviewsCarousel extends Component {
             </div>
             <button
               type="button"
-              data-testId="rightArrow"
+              data-testid="rightArrow"
               className="btn-style"
+              onClick={this.changeCarouselRight}
             >
               <img
                 src="https://assets.ccbp.in/frontend/react-js/right-arrow-img.png"
                 alt="right arrow"
                 className="arrow"
-                onClick={this.changeCarouselRight}
               />
             </button>
           </div>
